@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
 }
+
 .navbar {
     background-color: rgba(32, 32, 32, 0.7);
     position: absolute;
@@ -10,19 +11,80 @@
     left: 30vw;
     width: 40vw;
 }
-video   {
+
+video {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
 }
-#hidden-1   {
+
+#hidden-1 {
     background-color: red;
 }
 
-#hidden-1   {
+#hidden-1 {
     background-color: blue;
 }
 
-#hidden-1   {
+#hidden-1 {
     background-color: green;
+}
+
+#content1 {
+    background: green;
+    color: white;
+    padding: 5em;
+}
+
+#content2 {
+    background: orange;
+    color: white;
+    padding: 5em;
+}
+
+#content3 {
+    background: black;
+    color: white;
+    padding: 5em;
+}
+
+.navigationcontainer {
+    display: none;
+}
+
+.inputelement:checked~.navigationwrapper .navigationcontainer {
+    display: none;
+}
+
+.one:checked~.navigationwrapper #content1 {
+    display: block;
+}
+
+.two:checked~.navigationwrapper #content2 {
+    display: block;
+}
+
+.three:checked~.navigationwrapper #content3 {
+    display: block;
+}
+
+span {
+    display: inline-block;
+    background: grey;
+    width: 100px;
+    height: 50px
+}
+
+.inputelement {
+    position: absolute;
+    height: 50px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.inputelement:checked+span {
+    background: darkgrey;
+}
+span {
+    padding: 0;
 }
