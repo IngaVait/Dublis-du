@@ -15,14 +15,10 @@ video   {
     width: 100vw;
     object-fit: cover;
 }
-#hidden-1   {
-    background-color: red;
+.menu-but  {
+    position: absolute;
+    height: 80px;
 }
-
-#hidden-1   {
-    background-color: blue;
-}
-
-#hidden-1   {
-    background-color: green;
+.height-80px    {
+    height: 80px;
 }
