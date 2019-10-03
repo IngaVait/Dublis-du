@@ -15,4 +15,14 @@ video   {
     width: 100vw;
     object-fit: cover;
 }
+#hidden-1   {
+    background-color: red;
+}
 
+#hidden-1   {
+    background-color: blue;
+}
+
+#hidden-1   {
+    background-color: green;
+}
